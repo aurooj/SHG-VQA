@@ -3,7 +3,7 @@ Learning Situation Hyper-Graphs for Video Question Answering [CVPR 2023]
 
 [Aisha Urooj Khan](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ceiuCp4AAAAJ), [Hilde Kuehne](https://hildekuehne.github.io/), [Bo Wu](https://scholar.google.com/citations?user=6ozI_ZMAAAAJ&hl=en), Kim Chheu, Walid Bousselhum, [Chuang Gan](https://people.csail.mit.edu/ganchuang/), [Niels Da Vitoria Lobo](https://www.crcv.ucf.edu/person/niels-lobo/), [Mubarak Shah](https://www.crcv.ucf.edu/person/mubarak-shah/)
 
-[`Website`]() | [`arXiv`]() | [`BibTeX`](#citation)
+[`Website`]() | [`Paper`](https://www.crcv.ucf.edu/wp-content/uploads/2018/11/2023072364-4.pdf) | [`BibTeX`](#citation)
 
 Official Pytorch implementation and pre-trained models for Learning Situation Hyper-Graphs for Video Question Answering (coming soon).
 
