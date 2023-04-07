@@ -14,6 +14,11 @@ questions related to video content by predicting situation hyper-graphs, coined 
 a VQA loss with the cross-entropy function and a Hungarian matching loss for the situation graph prediction. The effectiveness of the proposed architecture is extensively evaluated on two challenging benchmarks: AGQA and STAR. Our results show that learning the underlying situation hypergraphs helps the system to significantly improve its performance for novel challenges of video question-answering task.
 
 <p align="center">
+<img src="shg.png" width=100% height=100% 
+class="center">
+</p>
+
+<p align="center">
 <img src="architecture.png" width=100% height=100% 
 class="center">
 </p>
