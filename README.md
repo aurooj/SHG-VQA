@@ -18,6 +18,7 @@ a VQA loss with the cross-entropy function and a Hungarian matching loss for the
 class="center">
 </p>
 
+### Proposed SHG-VQA Architecture
 <p align="center">
 <img src="architecture.png" width=100% height=100% 
 class="center">
