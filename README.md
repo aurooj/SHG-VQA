@@ -29,3 +29,9 @@ class="center">
 We report results on two reasoning-based video question answering datasets: [AGQA](https://cs.stanford.edu/people/ranjaykrishna/agqa/) and [STAR](https://bobbywu.com/STAR/). 
 
 Instructions to preprocess AGQA and STAR (to be added)
+
+### Citation
+If this work and/or its findings are useful for your research, please cite our paper.
+
+### Questions?
+Please contact 'aishaurooj@gmail.com'
