@@ -23,3 +23,9 @@ class="center">
 <img src="architecture.png" width=100% height=100% 
 class="center">
 </p>
+
+
+### Datasets
+We report results on two reasoning-based video question answering datasets: [AGQA](https://cs.stanford.edu/people/ranjaykrishna/agqa/) and [STAR](https://bobbywu.com/STAR/). 
+
+Instructions to preprocess AGQA and STAR (to be added)
