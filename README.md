@@ -36,7 +36,7 @@ Download train and val split for the balanced version of AGQA 2.0 we used in our
 ##### Questions:
 * We randomly sampled 10% of questions from the training set to be used for the validation set
 * Train/Valid/Test files are formatted as a list of dictionaries, containing all information given by AGQA.
-    * Format: `[{
+    * Format: ```[{
     "question": "Before starting to open a bag, what was the person taking?",
      "answer": "paper", 
      "video_id": "3ZUVI", 
@@ -47,12 +47,12 @@ Download train and val split for the balanced version of AGQA 2.0 we used in our
      "semantic": "object", 
      "structural": "query", 
      "novel_comp": 0, 
-     "more_steps": 0, ...}]`
+     "more_steps": 0, ...}]```
 
 ##### Answers:
 * We iterated through all ground-truth answers in the training/validation set to get all answer choices.
 * All possible answers are mapped to an index and stored in the answer vocab.
-    * Format: {"answer1": 0, "answer2": 1, ...}
+    * Format: `{"answer1": 0, "answer2": 1, ...}`
 
 
 ##### Video Frames:
@@ -60,27 +60,27 @@ Download train and val split for the balanced version of AGQA 2.0 we used in our
 * We randomly sampled a fixed clip-len from these frames.
     * trimmed_frame_ids.json file:
         * Contains pre-trimmed and sampled frames of clip length 16
-        * Format: `{
+        * Format: ```{
         vid_id1: [frame#, frame#,...],
         vid_id2: [frame#, frame#,...],
-        ...}`
+        ...}```
 
 ##### Triplets
 * AGQA provides "scene graphs" and object/relationships/action classes.
 * We iterated through the given scene graphs for each video's frame and created triplets in the form of: (person, relation, object)
     * frameTriplets.json:
-        * Format: `{
+        * Format: ```{
         vid_id: {frame#: [(triplet), (triplet)], 
                  frame#: [(triplet), (triplet)]},
-                 ...}`
+                 ...}```
 
 * For the given action classes, we list all actions found in each video frame.
     * frameActions.json:
-        * Format: `{
+        * Format: ```{
                      vid_id: {frame#: [(action), (action)], 
                               frame#: [(action)]
                               },
-                  ...} `
+                  ...} ```
 
 * All unique triplets and actions are mapped to an index for easy reference in the code.
     * relationship_triplets.json: `{(triplet): 0, (triplet): 1, ...}`
