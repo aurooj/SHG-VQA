@@ -51,6 +51,11 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
     ```
 * For the question-only or video-question-only models:
     * Change the ```--taskHGQA``` to ```--taskQ``` or ```--taskVQA```
+ 
+* For AQGA's test splits, models are trained as follows:
+   * Indirect References: This split is trained using the full model
+   * Novel Compositions: Add a ```--novelComp``` flag
+   * More Compositional Steps: Add a ```--compSteps``` flag
 
 
 ##### Evaluation
@@ -66,8 +71,10 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
     * Indirect References: Keep the ```--indirectRef``` flag
     * Novel Compositions: Change to ```--novelComp```
     * More Compositional Steps: Change to ```--compSteps```
-
-
+    
+    * **Note:** ```--indirectRef``` will evaulate both the full model and the indirect references split
+   
+     
 
 #### Pre-Processing
 ##### Questions:
