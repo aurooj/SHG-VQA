@@ -33,6 +33,44 @@ Instructions to preprocess AGQA and STAR (to be added)
 #### AGQA
 Download train and val split for the balanced version of AGQA 2.0 we used in our experiments from [here](https://drive.google.com/file/d/17_rqCnR9whlXRPd9RfubhPUP8oLCFD4b/view?usp=sharing).
 
+##### Compilation Instructions
+1. Download our data from above.
+2. Check the README.md files in each directory (AGQA/data and AGQA/annotations) to see where each file 
+   should be kept.
+3. Open AGQA/src/tasks/agqa_data.py and locate the "todo"s. Change the paths of the root and annotations directory to match yours.
+
+##### Training 
+For the full model, run ```agqaHGQA.py```. For the question-only and video-question-only models, run ```agqaQ.py``` and ```agqaVQA.py``` respectively.
+
+* The following flags are used for the full model:
+    ```
+    --train train --valid valid --llayers 5 --xlayers 2 --rlayers 5 \
+    --noCaps --crossAttnType cross --batchSize 32 --optim bert --lr 1e-5 --taskHGQA \
+    --fromScratch --LossHGPerFrame --epochs 100 --tqdm --output path/to/output/files \
+    --augmentType rand_aug --backbone slow_r50 --multiGPU
+    ```
+* For the question-only or video-question-only models:
+    * Change the ```--taskHGQA``` to ```--taskQ``` or ```--taskVQA```
+
+
+### Pre-Processing
+##### Evaluation
+* The following flags are used:
+  ```
+  --test test --llayers 5 --xlayers 2 --rlayers 5 \ 
+  --noCaps --LossHGPerFrame --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA \
+  --fromScratch --indirectRef --epochs 100 --tqdm --output path/to/output/files \
+  --augmentType no_aug --backbone slow_r50 --load path/to/saved/model --multiGPU"
+  ```
+
+* To test AQGA's different test splits:
+    * Indirect References: Keep the ```--indirectRef``` flag
+    * Novel Compositions: Change to ```--novelComp```
+    * More Compositional Steps: Change to ```--compSteps```
+
+
+
+
 ##### Questions:
 * We randomly sampled 10% of questions from the training set to be used for the validation set
 * Train/Valid/Test files are formatted as a list of dictionaries, containing all information given by AGQA.
@@ -71,7 +109,7 @@ Download train and val split for the balanced version of AGQA 2.0 we used in our
         ...}
         ```
 
-##### Triplets
+##### Triplets:
 * AGQA provides "scene graphs" and object/relationships/action classes.
 * We iterated through the given scene graphs for each video's frame and created triplets in the form of: (person, relation, object)
     * frameTriplets.json:
