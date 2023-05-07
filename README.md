@@ -53,14 +53,13 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
     * Change the ```--taskHGQA``` to ```--taskQ``` or ```--taskVQA```
 
 
-### Pre-Processing
 ##### Evaluation
 * The following flags are used:
   ```
   --test test --llayers 5 --xlayers 2 --rlayers 5 \ 
   --noCaps --LossHGPerFrame --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA \
   --fromScratch --indirectRef --epochs 100 --tqdm --output path/to/output/files \
-  --augmentType no_aug --backbone slow_r50 --load path/to/saved/model --multiGPU"
+  --augmentType no_aug --backbone slow_r50 --load path/to/saved/model --multiGPU
   ```
 
 * To test AQGA's different test splits:
@@ -70,7 +69,7 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
 
 
 
-
+### Pre-Processing
 ##### Questions:
 * We randomly sampled 10% of questions from the training set to be used for the validation set
 * Train/Valid/Test files are formatted as a list of dictionaries, containing all information given by AGQA.
