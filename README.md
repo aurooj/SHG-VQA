@@ -59,7 +59,7 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
 
 
 ##### Evaluation
-* The following flags are used:
+* The following flags are used for evaluating the full model:
   ```
   --test test --llayers 5 --xlayers 2 --rlayers 5 \ 
   --noCaps --LossHGPerFrame --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA \
@@ -68,11 +68,11 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
   ```
 
 * To test AQGA's different test splits:
-    * Indirect References: Keep the ```--indirectRef``` flag
-    * Novel Compositions: Change to ```--novelComp```
-    * More Compositional Steps: Change to ```--compSteps```
+    * Indirect References: Keep the ```--indirectRef``` flag, load the full model's ```.pth```
+    * Novel Compositions: Change to ```--novelComp```, load the ```.pth``` from training the novelComp model 
+    * More Compositional Steps: Change to ```--compSteps```, load the ```.pth``` from training the compSteps model 
     
-    * **Note:** ```--indirectRef``` will evaulate both the full model and the indirect references split
+    * **Note:** ```--indirectRef``` will evaulate both the full model and the indirect references split together
    
      
 
