@@ -35,9 +35,9 @@ Download train and val split for the balanced version of AGQA 2.0 we used in our
 
 ##### Compilation Instructions
 1. Download our data from above.
-2. Check the README.md files in each directory (AGQA/data and AGQA/annotations) to see where each file 
+2. Check the README.md files in each directory (```AGQA/data``` and ```AGQA/annotations```) to see where each file 
    should be kept.
-3. Open AGQA/src/tasks/agqa_data.py and locate the "todo"s. Change the paths of the root and annotations directory to match yours.
+3. Open ```AGQA/src/tasks/agqa_data.py``` and locate the "todo"s. Change the paths of the root and annotations directory to match yours.
 
 ##### Training 
 For the full model, run ```agqaHGQA.py```. For the question-only and video-question-only models, run ```agqaQ.py``` and ```agqaVQA.py``` respectively.
@@ -69,7 +69,7 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
 
 
 
-### Pre-Processing
+#### Pre-Processing
 ##### Questions:
 * We randomly sampled 10% of questions from the training set to be used for the validation set
 * Train/Valid/Test files are formatted as a list of dictionaries, containing all information given by AGQA.
