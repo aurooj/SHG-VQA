@@ -35,9 +35,10 @@ Download train and val split for the balanced version of AGQA 2.0 we used in our
 
 ##### Compilation Instructions
 1. Download our data from above.
-2. Check the README.md files in each directory (```AGQA/data``` and ```AGQA/annotations```) to see where each file 
+2. Download the Charades videos and frames.
+3. Check the README.md files in each directory (```AGQA/data``` and ```AGQA/annotations```) to see where each file 
    should be kept.
-3. Open ```AGQA/src/tasks/agqa_data.py``` and locate the "todo"s. Change the paths of the root and annotations directory to match yours.
+4. Open ```AGQA/src/tasks/agqa_data.py``` and locate the "todo"s. Change the paths of the root and annotations directory to match yours.
 
 ##### Training 
 For the full model, run ```agqaHGQA.py```. For the question-only and video-question-only models, run ```agqaQ.py``` and ```agqaVQA.py``` respectively.
