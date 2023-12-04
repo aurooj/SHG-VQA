@@ -148,13 +148,13 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
 If this work and/or its findings are useful for your research, please cite our paper.
 
 ```bibtex
-@misc{khan2023learning,
-      title={Learning Situation Hyper-Graphs for Video Question Answering}, 
-      author={Aisha Urooj Khan and Hilde Kuehne and Bo Wu and Kim Chheu and Walid Bousselham and Chuang Gan and Niels Lobo and Mubarak Shah},
-      year={2023},
-      eprint={2304.08682},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Urooj_2023_CVPR,
+    author    = {Urooj, Aisha and Kuehne, Hilde and Wu, Bo and Chheu, Kim and Bousselham, Walid and Gan, Chuang and Lobo, Niels and Shah, Mubarak},
+    title     = {Learning Situation Hyper-Graphs for Video Question Answering},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {14879-14889}
 }
 ```
 
