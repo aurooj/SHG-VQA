@@ -1,0 +1,157 @@
+c000 holding some clothes
+c001 putting clothes somewhere
+c002 taking some clothes from somewhere
+c003 throwing clothes somewhere
+c004 tidying some clothes
+c005 washing some clothes
+c006 closing a door
+c007 fixing a door
+c008 opening a door
+c009 putting something on a table
+c010 sitting on a table
+c011 sitting at a table
+c012 tidying up a table
+c013 washing a table
+c014 working at a table
+c015 holding a phone
+c016 playing with a phone
+c017 putting a phone somewhere
+c018 taking a phone from somewhere
+c019 talking on a phone
+c020 holding a bag
+c021 opening a bag
+c022 putting a bag somewhere
+c023 taking a bag from somewhere
+c024 throwing a bag somewhere
+c025 closing a book
+c026 holding a book
+c027 opening a book
+c028 putting a book somewhere
+c029 smiling at a book
+c030 taking a book from somewhere
+c031 throwing a book somewhere
+c032 watching a book
+c033 holding a towel
+c034 putting a towel somewhere
+c035 taking a towel from somewhere
+c036 throwing a towel somewhere
+c037 tidying up a towel
+c038 washing something with a blanket
+c039 closing a box
+c040 holding a box
+c041 opening a box
+c042 putting a box somewhere
+c043 taking a box from somewhere
+c044 taking something from a box
+c045 throwing a box somewhere
+c046 closing a laptop
+c047 holding a laptop
+c048 opening a laptop
+c049 putting a laptop somewhere
+c050 taking a laptop from somewhere
+c051 watching a laptop or something on a laptop
+c052 playing on a laptop
+c053 holding a shoe
+c054 putting shoes somewhere
+c055 putting on a shoe
+c056 taking shoes from somewhere
+c057 taking off some shoes
+c058 throwing shoes somewhere
+c059 sitting in a chair
+c060 standing on a chair
+c061 holding some food
+c062 putting some food somewhere
+c063 taking food from somewhere
+c064 throwing food somewhere
+c065 eating some food
+c066 making some food
+c067 holding a sandwich
+c068 putting a sandwich somewhere
+c069 taking a sandwich from somewhere
+c070 holding a blanket
+c071 putting a blanket somewhere
+c072 snuggling with a blanket
+c073 taking a blanket from somewhere
+c074 throwing a blanket somewhere
+c075 tidying up a blanket
+c076 holding a pillow
+c077 putting a pillow somewhere
+c078 snuggling with a pillow
+c079 taking a pillow from somewhere
+c080 throwing a pillow somewhere
+c081 putting something on a shelf
+c082 tidying a shelf or something on a shelf
+c083 reaching for and grabbing a picture
+c084 holding a picture
+c085 laughing at a picture
+c086 putting a picture somewhere
+c087 taking a picture of something
+c088 watching a picture
+c089 closing a window
+c090 opening a window
+c091 washing a window
+c092 watching outside of a window
+c093 holding a mirror
+c094 smiling in a mirror
+c095 washing a mirror
+c096 watching something in a mirror
+c097 walking through a doorway
+c098 holding a broom
+c099 putting a broom somewhere
+c100 taking a broom from somewhere
+c101 throwing a broom somewhere
+c102 tidying up with a broom
+c103 fixing a light
+c104 turning on a light
+c105 turning off a light
+c106 drinking from a cup
+c107 holding a cup of something
+c108 pouring something into a cup
+c109 putting a cup somewhere
+c110 taking a cup from somewhere
+c111 washing a cup
+c112 closing a closet
+c113 opening a closet
+c114 tidying up a closet
+c115 holding a paper
+c116 putting their paper somewhere
+c117 taking paper from somewhere
+c118 holding a dish
+c119 putting a dish somewhere
+c120 taking a dish from somewhere
+c121 washing a dish
+c122 lying on a sofa
+c123 sitting on sofa
+c124 lying on the floor
+c125 sitting on the floor
+c126 throwing something on the floor
+c127 tidying something on the floor
+c128 holding some medicine
+c129 consuming some medicine
+c130 putting groceries somewhere
+c131 laughing at a television
+c132 watching television
+c133 awakening in bed
+c134 lying on a bed
+c135 sitting in a bed
+c136 fixing a vacuum
+c137 holding a vacuum
+c138 taking a vacuum from somewhere
+c139 washing their hands
+c140 fixing a doorknob
+c141 grasping onto a doorknob
+c142 closing a refrigerator
+c143 opening a refrigerator
+c144 fixing their hair
+c145 working on a book
+c146 awakening somewhere
+c147 cooking something
+c148 dressing themselves
+c149 laughing at something
+c150 running somewhere
+c151 going from standing to sitting
+c152 smiling at something
+c153 sneezing somewhere
+c154 standing up
+c155 undressing themselves
+c156 eating something
