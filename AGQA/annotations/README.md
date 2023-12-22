@@ -13,3 +13,6 @@
 * relationship_triplets.json
 ---------------------------
 * trainVal_vocab.json
+
+
+Unzip folder `agqa_annotations.zip` and put all files in this folder. 
