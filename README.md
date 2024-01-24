@@ -142,7 +142,81 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
     * relationship_triplets.json: `{(triplet): 0, (triplet): 1, ...}`
     * action_dictionaries.json: `{action: 0, action: 1, ...}`
 
+#### STAR
+On STAR dataset, SHG-VQA was trained separately for each question type: Feasibility, Prediction, Interaction, and Sequence.
+Download the data from https://bobbywu.com/STAR/. 
 
+##### Training
+For training, run the following commands:
+```
+cd AGQA/
+
+```
+1) To train on Feasibility questions:
+```
+CUDA_VISIBLE_DEVICES=0,1 python src/tasks/star.py --train train --valid val --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA --useHGMask \
+   --epochs 100 --tqdm --output snap/star/star_randaug_hgqa_feas_sep_all --qType Feasibility \
+   --qaArrangeType add_sep_all --augmentType rand_aug --backbone slow_r50 --LossHGPerFrame --multiGPU
+```
+2) To train on Prediction questions:
+```
+CUDA_VISIBLE_DEVICES=0,1 python src/tasks/star.py --train train --valid val --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA --useHGMask \
+   --epochs 100 --tqdm --output snap/star/star_randaug_hgqa_pred_sep_all --qType Prediction \
+   --qaArrangeType add_sep_all --augmentType rand_aug --backbone slow_r50 --LossHGPerFrame --multiGPU
+
+```
+
+3) To train on Interaction questions:
+```
+   CUDA_VISIBLE_DEVICES=0,1 python src/tasks/star.py --train train --valid val --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA --useHGMask \
+   --epochs 100 --tqdm --output snap/star/star_randaug_hgqa_interaction_sep_all --qType Interaction \
+   --qaArrangeType add_sep_all --augmentType rand_aug --backbone slow_r50 --LossHGPerFrame --multiGPU
+```
+4) To train on Sequence questions:
+
+ ```
+ CUDA_VISIBLE_DEVICES=0,1 python src/tasks/star.py --train train --valid val --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8 --optim bert --lr 1e-5 --taskHGQA --useHGMask \
+   --epochs 100 --tqdm --output snap/star/star_randaug_hgqa_seq_sep_all --qType Sequence \
+   --qaArrangeType add_sep_all --augmentType rand_aug --backbone slow_r50 --LossHGPerFrame --multiGPU
+```
+
+##### Testing
+Run the following commands to test the trained model for each question type respectively:
+1) For Feasibility:
+```
+python src/tasks/star.py --train train --valid "" --test test --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8  --taskHGQA --useHGMask \
+   --load snap/star/star_randaug_hgqa_feas_sep_all/BEST --tqdm --output snap/star/star_randaug_hgqa_feas_sep_all --qType Feasibility \
+   --qaArrangeType add_sep_all --augmentType no_aug --backbone slow_r50
+```
+
+2) For Prediction:
+```
+python src/tasks/star.py --train train --valid "" --test test --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8   --taskHGQA --useHGMask \
+   --load snap/star/star_randaug_hgqa_pred_sep_all/BEST --tqdm --output snap/star/star_randaug_hgqa_pred_sep_all --qType Prediction \
+   --qaArrangeType add_sep_all --augmentType no_aug --backbone slow_r50
+```
+
+3) For Interaction:
+```
+  python src/tasks/star.py --train train --valid "" --test test --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8  --taskHGQA --useHGMask \
+  --load  snap/star/star_randaug_hgqa_interaction_sep_all/BEST --tqdm --output snap/star/star_randaug_hgqa_interaction_sep_all --qType Interaction \
+   --qaArrangeType add_sep_all --augmentType no_aug --backbone slow_r50
+```
+
+4) For Sequence:
+```
+python src/tasks/star.py --train train --valid "" --test test --llayers 5 --xlayers 2 --rlayers 5 \
+  --noCaps --crossAttnType cross --batchSize 8  --taskHGQA --useHGMask \
+  --load  snap/star/star_randaug_hgqa_seq_sep_all/BEST --tqdm --output snap/star/star_randaug_hgqa_seq_sep_all --qType Sequence \
+   --qaArrangeType add_sep_all --augmentType no_aug --backbone slow_r50
+```
 
 ### Citation
 If this work and/or its findings are useful for your research, please cite our paper.
