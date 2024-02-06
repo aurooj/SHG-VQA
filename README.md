@@ -144,7 +144,9 @@ For the full model, run ```agqaHGQA.py```. For the question-only and video-quest
 
 #### STAR
 On STAR dataset, SHG-VQA was trained separately for each question type: Feasibility, Prediction, Interaction, and Sequence.
-Download the data from https://bobbywu.com/STAR/. 
+Download the data from https://bobbywu.com/STAR/. The processed data files can be found at [data](https://github.com/aurooj/SHG-VQA/tree/main/data). Train-val-test splits are [here](https://github.com/aurooj/SHG-VQA/blob/main/data/read.md).
+
+
 
 ##### Training
 For training, run the following commands:
