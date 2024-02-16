@@ -5,7 +5,7 @@ Learning Situation Hyper-Graphs for Video Question Answering [CVPR 2023]
 
 [`Website`]() | [`Paper`](https://arxiv.org/abs/2304.08682) | [`BibTeX`](#citation)
 
-Official Pytorch implementation and pre-trained models for Learning Situation Hyper-Graphs for Video Question Answering (coming soon).
+Official Pytorch implementation and pre-trained models for Learning Situation Hyper-Graphs for Video Question Answering.
 
 ## Abstract
 Answering questions about complex situations in videos requires not only capturing the presence of actors, objects,
@@ -28,7 +28,7 @@ class="center">
 ### Datasets
 We report results on two reasoning-based video question answering datasets: [AGQA](https://cs.stanford.edu/people/ranjaykrishna/agqa/) and [STAR](https://bobbywu.com/STAR/). 
 
-Instructions to preprocess AGQA and STAR (to be added)
+Instructions to preprocess AGQA and STAR are given below.
 
 #### AGQA
 Download train and val split for the balanced version of AGQA 2.0 we used in our experiments from [here](https://drive.google.com/file/d/17_rqCnR9whlXRPd9RfubhPUP8oLCFD4b/view?usp=sharing).
